@@ -1,0 +1,63 @@
+site_name: My Notes
+site_url: https://shadab-shk.github.io/
+
+copyright: |
+  Copyright &copy; 2018 - 2021 <b>Shadab Shaikh 😎</b>
+
+theme:
+  
+  features:
+    - navigation.indexes
+    - search.share
+    - search.suggest
+
+  name: material
+  font:
+    text: Roboto
+  
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: black
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: light green
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.superfences
+  - codehilite
+  - toc:
+      permalink: True
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  
+  version:
+    provider: Shadab
+
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/shadab-shaikh-616227211/
+      name: Shadab on Linkedin
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/shad2b.shaikh/
+      name: Shadab on Instagram
+    - icon: fontawesome/brands/github
+      link: https://github.com/shadab-shk
+      name: Shadab on Github
+
+
+  generator: false
+
